@@ -26,4 +26,8 @@ describe("triangles", function() {
   it("returns 'not a triangle' if the second side is greater than or equal to the combined length of the first and third sides", function () {
     expect(triangles([6, 9, 3])).to.equal("not a triangle");
   });
+
+  it("returns 'not a triangle' if the third side is greater than or equal to the combined length of the first and second sides", function () {
+    expect(triangles([6, 9, 3])).to.equal("not a triangle");
+  });
 });
