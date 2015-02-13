@@ -23,7 +23,6 @@ $(document).ready(function() {
 
     $(".triangle-name").text(result);
 
-    $("#dork").show();
     event.preventDefault();
   });
 });
