@@ -10,4 +10,8 @@ describe("triangles", function() {
   it("returns isosceles when only the first two sides are equal", function () {
     expect(triangles([3, 3, 4])).to.equal("isosceles");
   });
+
+  it("returns isosceles when only the first and third sides are equal", function () {
+    expect(triangles([3, 4, 3])).to.equal("isosceles");
+  });
 });
