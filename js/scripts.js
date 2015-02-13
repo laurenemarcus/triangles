@@ -12,5 +12,7 @@ var triangles = function(triangle) {
     return triangles[2];
   } else if ((sideOne == sideThree) && (sideTwo != sideOne)) {
     return triangles[2];
+  } else if ((sideTwo == sideThree) && (sideTwo != sideOne)) {
+    return triangles[2];
   }
 }
