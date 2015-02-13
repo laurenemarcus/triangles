@@ -15,3 +15,15 @@ var triangles = function(triangle) {
     return triangles[2];
   }
 }
+
+$(document).ready(function() {
+  $("form#triangle-namer").submit(function(event){
+    var triangle = $("input#triangle").val();
+    var result = triangles(triangle);
+
+    $(".triangle-name").text(result);
+
+    $("#dork").show();
+    event.preventDefault();
+  });
+});
